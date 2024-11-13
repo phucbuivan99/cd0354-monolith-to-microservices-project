@@ -11,7 +11,7 @@ before_script:
   - echo "no tests. Yes there will be tests"
 
 script:
-  - docker --version # print the version for logging here.
+  - docker --version
   - docker build -t udagram-reverseproxy./udagram-reverseproxy
   - docker build -t udagram-api-feed/udagram-api-feed
   - docker build -t udagram-api-user/udagram-api-user
@@ -24,7 +24,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push ugogineering/udagram-reverseproxy:v4a
-  - docker push ugogineering/udagram-api-feed:v4a
-  - docker push ugogineering/udagram-api-user:v4a
-  - docker push ugogineering/udagram-frontend:v4a
+  - docker push phucbv3/udagram-reverseproxy:v4a
+  - docker push phucbv3/udagram-api-feed:v4a
+  - docker push phucbv3/udagram-api-user:v4a
+  - docker push phucbv3/udagram-frontend:local
