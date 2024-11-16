@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-feed
-        image: phucbv3/udagram-api-feed:v4a
+        image: phucbv3/udagram-api-feed:v1
         imagePullPolicy: Always
         envFrom:
           - secretRef:

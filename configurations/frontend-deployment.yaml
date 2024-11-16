@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: phucbv3/udagram-frontend:v6
+        image: phucbv3/udagram-frontend:v1
         imagePullPolicy: Always
         envFrom:
           - secretRef:

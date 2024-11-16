@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: phucbv3/udagram-reverseproxy:v4a
+        image: phucbv3/udagram-reverseproxy:v1
         imagePullPolicy: Always
         envFrom:
           - secretRef:
